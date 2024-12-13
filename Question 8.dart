@@ -7,9 +7,10 @@ void main() {
     {'name': 'Tom', 'eligible': false},
   ];
 
-  // Remove users where 'eligible' is false
-  usersEligibility.removeWhere((user) => user['eligible'] == false);
-
-  // Print the updated list
+  usersEligibility.retainWhere((a) => a["eligible"] == true);
   print(usersEligibility);
 }
+
+
+// // usersEligibility.removeWhere((a) => a["eligible"] == flase);
+// we can also remove by this method.
