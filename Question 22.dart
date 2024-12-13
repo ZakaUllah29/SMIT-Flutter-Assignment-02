@@ -1,19 +1,15 @@
-// Q.22: Given a map representing a shopping cart with keys as product names
-// and values as quantities, write Dart code to check if a product named "Apple"
-// exists in the cart. Print "Product found" if it exists, otherwise print "Product not
-// found" .
-
 void main() {
-  Map<String, int> cart = {
-    'Banana': 2,
-    'Apple': 5,
-    'Orange': 3,
+  Map<String, dynamic> products = {
+    "Mango": 124,
+    "Washing Powder": 2,
+    "Charger": 1,
+    "Soap": 10,
+    "Clothes": 3
   };
 
-  // Check if 'Apple' exists in the cart
-  if (cart.containsKey('Apple')) {
-    print('Product found');
+  if (products.containsKey("Apple")) {
+    print("Product Found");
   } else {
-    print('Product not found');
+    print("Product Not Found");
   }
 }
