@@ -1,31 +1,26 @@
-// Q.6: Create Map variable name world then inside it create countries Map, Key
-// will be the name country & country value will have another map having
-// capitalCity, currency and language to it. by using any country key print all the
-// value of Capital & Currency.
-
 void main() {
-// Creating Coutries Maps
-
-  Map<String, Map<String, String>> world = {
-    'Pakistan': {
-      'capitalCity': 'Islamabad',
-      'currency': 'PKR',
-      'language': 'Urdu',
+  Map world = {
+    "Pakistan": {
+      "capitalcity": "Islamabad",
+      "Currency": "PKR",
+      "language": "Urdu"
     },
-    'India': {
-      'capitalCity': 'New Delhi',
-      'currency': 'INR',
-      'language': 'Hindi',
+    "India": {"capitalcity": "Delhi", "Currency": "INR", "language": "Hindi"},
+    "USA": {
+      "capitalcity": "Washington DC",
+      "Currency": "USD",
+      "language": "English"
     },
-    'France': {
-      'capitalCity': 'Paris',
-      'currency': 'Euro',
-      'language': 'French',
+    "Afghanistan": {
+      "capitalcity": "Kabul",
+      "Currency": "AFN",
+      "language": "Pashto"
     },
   };
 
-  String country = "Pakistan";
-  print('Capital of $country: ${world[country]?['capitalCity']}');
-  print('Currency of $country: ${world[country]?['currency']}');
-  print('Language of $country: ${world[country]?['Language']}');
+  String country = "India";
+
+  print("Capital city of $country : ${world[country]["capitalcity"]}");
+  print("Currency Of $country : ${world[country]["Currency"]}");
+  print("Language of $country : ${world[country]["language"]}");
 }
